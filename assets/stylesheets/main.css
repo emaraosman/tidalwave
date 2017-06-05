@@ -1,0 +1,165 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* IF BODY OVERFLOWS AGAIN USE THIS
+
+html,body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+*/
+
+
+
+
+/* Style begins below */
+
+
+
+/*
+================================
+HEADER
+================================
+*/
+body {
+  background-color: white;
+  font-family: "Lato";
+  font-weight: 300;
+  height: 100%;
+}
+
+html{
+  height:100%;
+}
+
+.header-wrap {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	position: relative;
+}
+
+
+.header-background {
+
+
+	z-index: 1;
+	background: url("https://s-media-cache-ak0.pinimg.com/originals/13/dd/32/13dd32d556b4d24ad079812c954fb08e.jpg") center center;
+	background-size: cover;
+	height: 100%;
+	//filter: brightness(1) blur(3.3px);
+  overflow: hidden;
+
+
+}
+
+header {
+	width: 100%;
+	position: absolute;
+  height:100%;
+	z-index: 2;
+	background: linear-gradient(to bottom, rgba(255,200,255,.80) -40%, rgba(1,230,110 ,1));
+
+
+}
+
+
+.title {
+  color: white;
+  font: 800 160px "Lato";
+  text-align: center;
+  padding-top: 1.5em;
+	transition: all 0.35s ease;
+}
+
+
+#start-button{
+	display: block;
+	margin: 0 auto;
+	margin-top: 30vmin;
+	padding: 7px 25px;
+	color: white;
+	background: linear-gradient(135deg, rgba(230,108,151,1) 0%, rgba(230,108,151,1) 0%, rgba(151,87,194,1) 100%);
+	font: 300 25px "Lato";
+	font-variant: small-caps;
+	outline: none;
+	border: none;
+}
+
+#start-button:hover{
+	transform: scale(1.03);
+	transition: 0.3s ease;
+	filter: brightness(1.1);
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1166px){
+
+  .user-bio {
+
+    font: 300 20px "Lato";
+
+  }
+
+  .user-photo {
+    width: 23vmax;
+    height: 23vmax;
+  }
+
+  .user-bio {
+    margin-top: 2vh;
+  }
+
+	#start-button{
+
+		margin-top: 60vmin;
+
+	}
+
+}

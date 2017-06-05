@@ -1,0 +1,290 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* IF BODY OVERFLOWS AGAIN USE THIS
+
+html,body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+*/
+
+
+
+
+/* Style begins below */
+
+
+
+/*
+================================
+HEADER
+================================
+*/
+body {
+  background-color: white;
+  font-family: "Lato";
+  font-weight: 300;
+  height: 100%;
+}
+
+html{
+  height:100%;
+}
+
+.header-wrap {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	position: relative;
+}
+
+
+.header-background {
+
+
+	z-index: 1;
+	background: url("https://s-media-cache-ak0.pinimg.com/originals/13/dd/32/13dd32d556b4d24ad079812c954fb08e.jpg") center center;
+	background-size: cover;
+  min-height: 600px;
+	height: 100%;
+	//filter: brightness(1) blur(3.3px);
+  overflow: hidden;
+
+
+}
+
+header {
+	width: 100%;
+	position: absolute;
+  height:100%;
+	z-index: 2;
+  background: linear-gradient(to bottom, rgba(255,200,255,.80) -40%, rgba(1,230,110 ,1));
+  overflow: hidden; /*This is to stop overflow from animations*/
+  min-height: 600px;
+}
+
+.top-row {
+  margin-top: 5px;
+}
+
+.title {
+  display: inline-block;
+  color: white;
+  font: 800 30px "Lato";
+  text-align: left;
+  padding-top: .2em;
+	transition: all 0.35s ease;
+}
+
+.date {
+  display: inline-block;
+  text-align: left;
+  font: 400 20px "Lato";
+  padding-top: .2em;
+  padding-bottom: .2em;
+  color:white;
+  animation-delay: .5s;
+}
+
+
+
+#message-button{
+	display: block;
+	margin: 0 auto;
+	margin-top: 6vh;
+	padding: 7px 25px;
+	color: white;
+	background: linear-gradient(135deg, rgba(230,108,151,1) 0%, rgba(230,108,151,1) 0%, rgba(151,87,194,1) 100%);
+	font: 300 20px "Lato";
+	//font-variant: small-caps;
+	outline: none;
+	border: none;
+  animation-delay: 3.5s;
+}
+
+#message-button:hover{
+	transition: all 0.3s ease;
+	transform: scale(1.03);
+	filter: brightness(1.1);
+}
+
+
+.welcome-message {
+  color:white;
+  font: 300 5vmax "Josefin Sans";
+  font-variant: small-caps;
+  text-align: center;
+  margin:4vh 0 4vh 0;
+  animation-delay: 1s;
+}
+
+.user-photo {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 15vmax;
+  height: 15vmax;
+  overflow: hidden;
+  border-radius: 50%;
+  border: solid 3px white;
+  animation-delay: 2.5s;
+}
+
+.user-photo img{
+  width: auto;
+  height: 100%;
+  margin-left: -50px;
+
+}
+
+.user-bio {
+  display: block;
+  text-align: center;
+  color: white;
+  font: 300 25px "Lato";
+  margin-top: 5vh;
+  animation-delay: 3.2s;
+}
+
+
+/*
+------------------- MESSAGE SECTION -----------------------
+*/
+
+#message-section{
+	display: none;
+	background: white;
+  height: auto;
+	width: 100%;
+  overflow: hidden;
+  animation-delay: .5s;
+  animation-duration: 3s;
+}
+
+.message-title {
+  display: block;
+  font: 400 60px "Josefin Sans";
+  padding-top: 80px;
+  text-align: left;
+}
+
+
+.message-text {
+	display: inline-block;
+	font: 300 18px "Lato";
+	color: black;
+	padding:40px 10px 80px 10px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 2em;
+}
+
+.signature {
+  display: block;
+  text-align: right;
+  padding: 10px 30px 10px 0px;
+  font: 40px "Tangerine";
+}
+
+/*
+------------------- RESPONSIVENESS -----------------------
+*/
+
+@media only screen and (max-width: 1166px){
+  .top-row {
+    margin-top: 0px;
+  }
+  .user-bio {
+    font: 300 19px "Lato";
+    margin-top: 2vh;
+  }
+
+  .user-photo {
+    width: 21vmax;
+    height: 21vmax;
+  }
+
+
+  .welcome-message {
+    margin:2vh 0 2vh 0;
+    font-size: 4vmax;
+  }
+
+  .title {
+    font: 700 3.5vh "Lato";
+    padding-top: .2em;
+  }
+
+  .date {
+    font: 400 2.5vh "Lato";
+    padding-top: .1em;
+    padding-bottom: .1em;
+    text-align: left;
+  }
+
+  #message-button{
+  	margin-top: 5vh;
+    font: 300 20px "Lato";
+  }
+
+  .message-title {
+    display: block;
+    font: 400 43px "Josefin Sans";
+    text-align: left;
+    padding: 40px 10px 0px 10px;
+  }
+
+  .message-text {
+  	display: inline-block;
+  	font: 300 17px "Josefin Sans";
+  	color: black;
+    padding: 20px 10px 50px 10px;
+  	text-align: left;
+  	vertical-align: middle;
+  	line-height: 1.7em;
+  }
+
+}

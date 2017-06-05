@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tidal wave</title>
+  </head>
+  <link href="assets/jquery.js" rel="stylesheet">
+  <link rel="stylesheet" href="assets/stylesheets/animate.css">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- SMOOTH scroll -->
+<script type="text/javascript" src="assets/stylesheets/smoothscroll.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!--<script src="http://www.google.com/jsapi" type="text/javascript"></script>-->
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900">
+
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link href="assets/stylesheets/content.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="assets/stylesheets/animate.css"> -->
+
+
+<!--<script type="text/javascript">google.load("jquery", "1.3.2");</script>-->
+
+<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+
+
+<!--
+//////////////////////////////////////////////////
+                BODY OF SITE BEGINS HERE:
+//////////////////////////////////////////////////
+ -->
+
+<body>
+
+<header class="container-fluid">
+
+  <div class="row top-row">
+    <h1 class="col-md-4 col-xs-8 title animated fadeInRight"><a href="index.html" style="text-decoration:none;">TIDAL WAVE</a></h1>
+    <h2 class="col-md-12 col-sm-12 col-xs-12 date animated fadeIn">11/16/2017</h2>
+  </div>
+
+  <div class="row">
+    <p id="welcome-message" class="welcome-message animated fadeIn">Say hi to Susan Smith!</p>
+  </div>
+
+  <div class="user-photo animated fadeInRight">
+    <img class= "" alt="personal-pic" src="https://assets.entrepreneur.com/content/16x9/822/20150406145944-dos-donts-taking-perfect-linkedin-profile-picture-selfie-mobile-camera-2.jpeg">
+  </div>
+
+  <div class="row">
+    <p class="user-bio col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 animated fadeIn">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec.</p>
+  </div>
+
+  <div class="row">
+    <a href="#message-section" class="smoothScroll" style="text-decoration : none"><button id="message-button" type="button" class="btn btn-info animated zoomIn">VIEW MY MESSAGE</button></a>
+  </div>
+
+</header>
+
+
+<div class="header-background"></div>
+
+
+
+<section id="message-section" class="container animated fadeIn">
+
+  <div class="row">
+    <h2 class="message-title col-md-9 col-md-offset-1">Message of the Day</h2>
+  </div>
+
+
+  <div class="row">
+    <h3 class="col-md-8 col-md-offset-2 col-xs-12 message-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, me.
+    <br>
+    <span class="signature">- Susan Smith</span>
+    </h3>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+(function( $ ){
+
+  $.fn.fitText = function( kompressor, options ) {
+
+    // Setup options
+    var compressor = kompressor || 1,
+        settings = $.extend({
+          'minFontSize' : Number.NEGATIVE_INFINITY,
+          'maxFontSize' : Number.POSITIVE_INFINITY
+        }, options);
+
+    return this.each(function(){
+
+      // Store the object
+      var $this = $(this);
+
+      // Resizer() resizes items based on the object width divided by the compressor * 10
+      var resizer = function () {
+        $this.css('font-size', Math.max(Math.min($this.width() / (compressor*10), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize)));
+      };
+
+      // Call once to set.
+      resizer();
+
+      // Call on resize. Opera debounces their resize by default.
+      $(window).on('resize.fittext orientationchange.fittext', resizer);
+
+    });
+
+  };
+
+})( jQuery );
+
+jQuery(".responsive_headline").fitText(1.2, { minFontSize: '55px', maxFontSize: '120px' });
+jQuery(".responsive_headline_c").fitText(1.2, { minFontSize: '70px', maxFontSize: '86px' });
+
+</script>
+
+<script type="text/javascript">
+
+  $(document).ready(function(){
+
+    $("#message-button").click(function(){
+    $("#message-section").css("display", "inline-block");
+    // $('html,body').animate({
+    //     scrollTop: $("#message-section").offset().top},
+    //     'slow');
+});
+
+  })
+
+
+
+</script>
+
+
+<!-- ANIMATECSS
+<script type="text/javascript">
+
+$(document).ready(function);
+
+setTimeout(function () {
+    $('.second').show().addClass('animated fadeInUp');}, 1500
+);
+
+$(document).ready(function(){
+    $('##########FILL IN###########').each(function() {
+        animationHover(this, 'fadeIn');
+    });
+});
+
+</script>
+-->
+
+
+
+
+
+
+        <script src="bootstrap/bootstrap-2.3.1.min.js"></script>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="jquery.fittext.js"></script>
+        <script>
+          jQuery(".responsive_headline").fitText();
+        </script>
+        <script>
+          jQuery(".responsive_headline_c").fitText();
+        </script>
+<script src="assets/stylesheets/jquery.js"></script>
+
+</body>
+</html>
